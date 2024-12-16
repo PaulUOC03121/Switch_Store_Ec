@@ -1,0 +1,120 @@
+/* Styles for the checkout pages */
+.checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+.checkout-data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 16px;
+    align-items: center;
+    width: 60%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.guest-user-info {
+    flex: 1;
+    text-align: center;
+    padding: 0px 20px;
+    border-right: 1px solid #a9a9a9;
+}
+
+.registered-user-info {
+    flex: 1;
+    text-align: center;
+    padding: 0px 20px;
+    border-left: 1px solid #a9a9a9;
+}
+
+.address-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.checkout-confirmation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    width: 220px;
+}
+
+.checkout-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    list-style: none;
+}
+
+/* Styles for forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;   
+}
+
+.form-item input {
+    flex-grow: 1;
+}
+
+/* Continue button */
+.continue-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.continue-btn:hover {
+    background-color: #218838;
+}
+
+/* Generate a password button */
+.generate-btn {
+    background-color: #3a45ea;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.generate-btn:hover {
+    background-color: #232dbe;
+}

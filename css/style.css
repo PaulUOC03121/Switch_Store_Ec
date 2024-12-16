@@ -1,0 +1,173 @@
+/* Global reset for consistent margin, padding, and box sizing across elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout for rows of categories */
+.category-row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 20px;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+.category-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 200px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.category-card:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+/* Grid layout for rows of products */
+.products-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+.product-card {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.products-row .product-card {
+    flex: unset;
+}
+
+.product-card:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+/* Global styles for the site */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 220px 100px 20px 100px;
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f3ef;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    color: inherit;
+}
+
+/* Styles for the header */
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.top-row {
+    background-color: #f2f3ef;
+    padding: 0px 100px;
+}
+
+.bottom-row {
+    background-color: #f8f9f5;
+    padding: 0px 100px;
+}
+
+.logo {
+    flex: 0 0 auto;
+}
+
+.user-actions {
+    display: flex;
+    gap: 50px;
+}
+
+.user-actions a {
+    transition: transform 0.4s ease;
+}
+
+.user-actions a:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease;
+}
+
+/* Styles for the menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 0;
+    display: inline-block;
+}
+
+.menu li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 30px;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.menu li a:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.5s ease;
+}
